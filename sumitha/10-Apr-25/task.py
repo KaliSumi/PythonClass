@@ -13,22 +13,7 @@ o1=student()
 o1.getdata()
 o1.showdata()
 
-class student:
-    def getdata(self):
-        self.name=input("enter the name:")
-        self.mark=[]
-        for x in range(5):
-            self.mark.append(int(input(f"enter the mark{x+1}:")))
-    def showdata(self):
-        print(f"{self.name}\t{self.mark}\n total:{sum(self.mark)}")
-
-stu=[]
-no=int(input("enter the no of students:"))
-for x in range(0,no,1):
-    stu.append(student())
-    stu[x].getdata()
-for x in stu:
-    x.showdata()
+ṇ
 
 
 class student:
