@@ -415,8 +415,41 @@ an iterable based on a condition (a function that returns True or False).'''
 # num=[1,2,3,4,5,6,7,8,9,10]
 # print(*map(square,num))
 
-def square(i):
-    if i%2==0:
-        return i**2
-num=[1,2,3,4,5,6,7,8,9,10]
-print(*filter(square,num))
+# def square(i):
+#     if i%2==0:
+#         return i
+# num=[1,2,3,4,5,6,7,8,9,10]
+# print(*map(lambda a:a**2,filntter(square,num)))
+
+
+#lambda 
+# r=lambda a,b,c:(a+b)-c
+# print(r(4,6,2))
+
+# from functools import reduce
+# r=[1,2,3,4,5,6]
+# result=reduce(lambda x,y:x+y,r)
+# print(result)
+
+# from functools import reduce
+# fa=[1,2,3,4,5,6]
+# result=reduce(lambda x,y:x*y,fa,2)
+# print(result)
+
+# '''
+# x=1 y=2
+# x=2 y=3
+# x=6 y=4
+# x=24 y=5
+# x=120
+# '''
+
+#generator 
+
+def fun(i):
+    for x in i:
+        yield x**2
+        yield x+3
+    
+l=[1,2,3,4,5,6]
+print(*fun(l))
