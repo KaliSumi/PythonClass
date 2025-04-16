@@ -446,10 +446,62 @@ an iterable based on a condition (a function that returns True or False).'''
 
 #generator 
 
-def fun(i):
-    for x in i:
-        yield x**2
-        yield x+3
+# def fun(i):
+#     for x in i:
+#         yield x**2
+#         yield x+3
     
-l=[1,2,3,4,5,6]
-print(*fun(l))
+# l=[1,2,3,4,5,6]
+# print(*fun(l))
+
+#Decorator 
+'''
+A Python decorator is a powerful and expressive tool that allows you to 
+modify the behavior of a function or class method without changing its source code. 
+It’s essentially a function that takes another function as input,
+adds some functionality, and returns it.
+'''
+
+# def sub(a,b):
+#     return a-b
+
+# def swap(a,b):
+#     if b>a:
+#         a,b=b,a
+#     return sub(a,b)
+
+# print(swap(10,8))
+# print(swap(8,10))
+
+def login(para):
+    def wrapper(*a, **k):
+        userName = input("Enter the Name: ")
+        password = input("Enter the Password: ")
+        if userName == "Admin" and password == "123" or userName=="Sumi" and password=='kali':
+            return para(*a, **k)  # Call the function
+        else:
+            print("Login Failed")
+    return wrapper
+
+@login
+def Dashboard():
+    op = int(input("1. User profile\n2. User data\n3. Record\n4. Logout\nChoose: "))
+    if op == 1:
+        print("User Profile")
+    elif op == 2:
+        print("User Data")
+    elif op == 3:
+        print("Record")
+    elif op == 4:
+        print("Logged out")
+    else:
+        print("Invalid option")
+
+Dashboard()
+
+
+@login
+def Dashboard1():
+   print("Welcome")
+
+Dashboard1()
