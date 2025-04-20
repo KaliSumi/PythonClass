@@ -9,12 +9,10 @@ Here are the main principles
 Object 
 Class
 Constructor 
-
 Inheritance 
 Polymorphism
 Abstraction 
 Encapsulation 
-
 '''
 
 
