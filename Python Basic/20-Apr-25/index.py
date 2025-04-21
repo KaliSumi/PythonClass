@@ -78,9 +78,7 @@ If the inner function is returned, it remembers the environment (the variables) 
 
 '''
 Regular Expression
-Regular expressions (often abbreviated as regex or regexp) in Python provide a way to search, match, 
-and manipulate strings using patterns. They are very powerful and allow you to perform complex text 
-processing in a compact and efficient way.
+Regular expressions (often abbreviated as regex or regexp) in Python provide a way to search, match, and manipulate strings using patterns. They are very powerful and allow you to perform complex text processing in a compact and efficient way.
 
 Python provides the re module to work with regular expressions.
 

@@ -1,0 +1,79 @@
+
+🐍 Python Tkinter Notes
+📌 What is Tkinter?
+Tkinter is the standard GUI (Graphical User Interface) library for Python.
+
+It allows you to create windows, buttons, text fields, and other GUI elements easily.
+
+It comes bundled with Python (no need to install separately).
+
+🏁 Getting Started
+python
+Copy
+Edit
+import tkinter as tk
+
+# Create main window
+root = tk.Tk()
+root.title("My First GUI")
+root.geometry("300x200")
+
+# Run the application
+root.mainloop()
+🧱 Basic Widgets
+
+Widget	Description	Example
+Label	Displays text or image	tk.Label(root, text="Hello")
+Button	Button the user can click	tk.Button(root, text="Click Me")
+Entry	Single-line text input	tk.Entry(root)
+Text	Multi-line text input	tk.Text(root)
+Checkbutton	Checkbox	tk.Checkbutton(root, text="Accept")
+Radiobutton	Options (one selection)	tk.Radiobutton(root, text="Option 1")
+Listbox	List of items	tk.Listbox(root)
+🧩 Placing Widgets
+You can place widgets using:
+
+pack() – simplest, stacks widgets vertically or horizontally
+
+grid() – places widgets in a table/grid (rows and columns)
+
+place() – absolute positioning (less common)
+
+python
+Copy
+Edit
+label = tk.Label(root, text="Name:")
+label.pack()  # or label.grid(row=0, column=0)
+⚙️ Widget Options
+You can customize widgets with options like:
+
+python
+Copy
+Edit
+tk.Label(root, text="Hello", fg="blue", bg="yellow", font=("Arial", 14))
+text – text to display
+
+fg – text color (foreground)
+
+bg – background color
+
+font – font style and size
+
+🧠 Handling Events (Button Clicks, etc.)
+python
+Copy
+Edit
+def on_click():
+    print("Button clicked!")
+
+button = tk.Button(root, text="Click Me", command=on_click)
+button.pack()
+🪟 Useful Methods
+
+Method	Description
+root.title("Title")	Sets window title
+root.geometry("400x300")	Sets window size
+root.mainloop()	Runs the GUI loop
+widget.get()	Gets input (for Entry/Text)
+widget.insert(index, text)	Inserts text into Entry/Text
+widget.delete(start, end)	Deletes text
