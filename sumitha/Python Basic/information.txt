@@ -1,3 +1,0 @@
- Muthu,King,12,M,1597538520,
-Lion,King,45,M,15742584520,
-sumitha,n,28,female,dddddddddddd
