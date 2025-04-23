@@ -1,0 +1,33 @@
+import pandas
+student={
+    'sumi':{
+        "tamil":89,
+        "english":96,
+        "maths":78,
+        "accounts":99,
+        "commerce":87
+    }
+    'kalis':{
+        "tamil":87,
+        "english":85,
+        "maths":95,
+        "accounts":68,
+        "commerce":97
+    }
+    'jovitha':{
+           "tamil":97,
+        "english":78,
+        "maths":76,
+        "accounts":97,
+        "commerce":91
+    }
+    'srinesh':{
+            "tamil":93,
+        "english":97,
+        "maths":82,
+        "accounts":79,
+        "commerce":88
+    }
+}
+marks=data frame(student)
+print(marks)
